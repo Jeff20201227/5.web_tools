@@ -20,7 +20,6 @@ function startTime(e) {
 
   error.innerHTML = "";
   let time = timerForm.elements.time.value;
-
   if (time && !timerId) {
     timerId = setInterval(() => {
       const timer = setTimer(time);
@@ -55,7 +54,7 @@ function resetTime(e) {
   clearInterval(timerId);
   console.log(timerId);
   timerId = null;
-  timerForm.elements.time.value = 0;
+  timerForm.elements.time.value = "00:00:00";
   error.innerHTML = "";
   ring.pause();
 };

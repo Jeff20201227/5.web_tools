@@ -8,7 +8,9 @@ module.exports = {
         filename: 'main.js'
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: "./index.html"
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),

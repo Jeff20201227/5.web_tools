@@ -1,1 +1,45 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Webpack App</title><meta name="viewport" content="width=device-width,initial-scale=1"><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datetime superapp</title>
+  <script type="module" src="./src/js/main.js"></script>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <button class="datecalc">Калькулятор дат</button>
+  <button class="timer">Таймер</button>
+  <form id="datecalc__form">
+    <fieldset>
+      <h3>Калькулятор дат</h3>
+      <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+      </label>
+      <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </fieldset>
+  </form>
+  <form id="timer__form" class="visibility">
+    <fieldset>
+      <label>
+        <span>Введите время: </span>
+        <input type="time" name="time" step="1" value="00:00:00" />
+      </label>
+      <button id="start">СТАРТ</button>
+      <button id="stop">СТОП</button>
+      <button id="reset">СБРОС</button>
+      <p class="error"></p>
+    </fieldset>
+  </form>
+</body>
+
+</html>
